@@ -31,16 +31,13 @@ body {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    /* Ajuste a opacidade para controlar o nível de escuridão */
     z-index: -1;
-    /* Mantém a camada atrás do conteúdo */
 }
 
 form {
     box-sizing: border-box;
     border-radius: 30px;
     background-color: rgba(0, 5, 39, 0.5);
-    /* Cor preta semi-transparente */
     backdrop-filter: blur(8px);
     width: 370px;
     height: auto;
