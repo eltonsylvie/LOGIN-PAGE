@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(assets/atmosphere.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Ajuste a opacidade para controlar o nível de escuridão */
+    z-index: -1;
+    /* Mantém a camada atrás do conteúdo */
+}
+
+form {
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgba(0, 5, 39, 0.5);
+    /* Cor preta semi-transparente */
+    backdrop-filter: blur(8px);
+    width: 370px;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: Righteous;
+    overflow: hidden;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+h1,
+h4,
+p {
+    font-weight: 100;
+    color: #70E000;
+}
+
+.login::placeholder,
+.pass::placeholder {
+    color: #70E000;
+    opacity: 90%;
+}
+
+input.login:focus,
+input.pass:focus {
+    border: 1px solid #4fff03;
+    box-shadow: 0 0 10px rgba(104, 255, 3, 0.887);
+}
+
+input.login,
+input.pass {
+    display: flex;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 50px;
+    background-color: #14213D;
+    border-radius: 25px;
+    border: none;
+    color: #70E000;
+    padding-left: 40px;
+    transition: 0.2s;
+    outline: none;
+}
+
+input.login:hover,
+input.pass:hover {
+    border: 1px solid #4fff03;
+    box-shadow: 0 0 10px rgba(104, 255, 3, 0.887);
+}
+
+div.signin {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+div.signin img {
+    position: absolute;
+    top: 50%;
+    margin-left: -16px;
+    transform: translateY(61.5%);
+    width: 20px;
+}
+
+div.signin img.alien {
+    position: absolute;
+    top: 31.5%;
+    margin-left: -16px;
+    transform: translateY(50%);
+    width: 18px;
+}
+
+
+.btn {
+    margin: 8px;
+    gap: 20px;
+    justify-content: space-around;
+    display: flex;
+}
+
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 30px;
+    border: 0;
+    transition: .3s;
+}
+
+button.go {
+    color: #0C1935;
+    font-family: Righteous;
+    background-color: #70E000;
+}
+
+button.signup {
+    color: #70E000;
+    font-family: Righteous;
+    background-color: #14213D;
+}
+
+button.go:hover {
+    background-color: #deea3e;
+}
+
+button.signup:hover {
+    color: #0C1935;
+    background-color: #4fff03;
+}
+
+button.go:hover,
+button.signup:hover {
+    cursor: pointer;
+    border: 2px solid #4fff03;
+    box-shadow: 0 0 10px rgba(104, 255, 3, 0.887);
+    transform: scale(1.06);
+}
+
+h4 {
+    font-size: 13px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+h4:hover {
+    text-decoration: underline;
+    font-size: 13px;
+    font-weight: 100;
+    cursor: pointer;
+}
+
+p {
+    font-family: righteous;
+    margin-top: 20px;
+    font-size: 10px;
+}
+
+i {
+    color: #4fff03;
+}
