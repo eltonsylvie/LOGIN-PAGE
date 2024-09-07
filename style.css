@@ -46,6 +46,7 @@ form {
     text-align: center;
     font-family: Righteous;
     overflow: hidden;
+    position: fixed;
 }
 
 h1 {
@@ -167,14 +168,6 @@ button.signup:hover {
     gap: 20px;
 }
 
-input[type="checkbox"] {
-    height: 15px;
-    width: 15px;
-    background-color: #4fff03;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
 h4 {
     font-size: 13px;
     font-weight: 100;
@@ -200,10 +193,11 @@ h4:hover:after {
     width: 100%;
 }
 
-p {
+.autor {
+    position: fixed;
     font-family: righteous;
-    margin-top: 20px;
-    font-size: 10px;
+    margin-top: 30%;
+    font-size: 13px;
 }
 
 i {
@@ -212,4 +206,70 @@ i {
     top: 54%;
     margin-left: -16px;
     right: 5vh;
+}
+
+div.indicador {
+    display: flex;
+    color: aliceblue;
+    background-color: rgba(137, 255, 202, 0.4);
+    margin-top: -43.5%;
+    margin-left: 60%;
+    z-index: 1;
+}
+
+@media screen and(min-width: 480px) {
+    div.indicador {
+        display: flex;
+        width: 100px;
+        background-color: #ff0000;
+        color: rgb(255, 255, 255);
+        margin-top: -170%;
+        margin-left: 70%;
+        z-index: 1;
+    }
+
+    .autor {
+        position: fixed;
+        font-family: righteous;
+        margin-top: 84%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    div.indicador {
+        display: flex;
+        width: 100px;
+        background-color: #3cff00;
+        color: rgb(255, 255, 255);
+        margin-top: -170%;
+        margin-left: 70%;
+        z-index: 1;
+    }
+
+    .autor {
+        position: fixed;
+        font-family: righteous;
+        margin-top: 100%;
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+    div.indicador {
+        display: flex;
+        width: 100px;
+        background-color: #00ffbf;
+        color: rgb(255, 255, 255);
+        margin-top: -85%;
+        margin-left: 70%;
+        z-index: 1;
+    }
+
+    .autor {
+        position: fixed;
+        font-family: righteous;
+        margin-top: 60%;
+        font-size: 13px;
+    }
 }
