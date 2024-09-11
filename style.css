@@ -14,6 +14,7 @@ body {
     background-size: cover;
     background-attachment: fixed;
     box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    transition: .7s;
 }
 
 .container {
@@ -47,6 +48,7 @@ form {
     font-family: Righteous;
     overflow: hidden;
     position: fixed;
+    transition: .7s;
 }
 
 h1 {
@@ -102,7 +104,7 @@ div.signin {
 
 div.signin img {
     position: absolute;
-    top: 50%;
+    top: 50.5%;
     margin-left: -16px;
     transform: translateY(61.5%);
     width: 20px;
@@ -110,12 +112,17 @@ div.signin img {
 
 div.signin img.alien {
     position: absolute;
-    top: 31.5%;
+    top: 31%;
     margin-left: -16px;
     transform: translateY(50%);
     width: 18px;
 }
 
+/*
+.blueAlienjs, .blueKeyjs {
+    display: none;
+}
+*/
 
 .btn {
     margin: 8px;
@@ -153,7 +160,12 @@ button.signup:hover {
     background-color: #4fff03;
 }
 
-button.go:hover,
+button.go:hover {
+    border: 1px solid #deea3e;
+    box-shadow: 0 0 10px rgb(252, 249, 99);
+    transform: scale(1.06);
+}
+
 button.signup:hover {
     cursor: pointer;
     border: 2px solid #4fff03;
@@ -203,73 +215,194 @@ h4:hover:after {
 i {
     color: #4fff03;
     position: absolute;
-    top: 54%;
+    top: 54.5%;
     margin-left: -16px;
     right: 5vh;
 }
 
-div.indicador {
+/* troca de cor */
+
+.trilho {
+    width: 70px;
+    height: 30px;
+    background-color: #4fff03;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+    top: 28vh;
+}
+
+.trilho .indicador {
+    width: 30px;
+    height: 30px;
+    background-color: #0C1935;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .7s;
+}
+
+.trilho.light .indicador {
+    left: 40px;
+    background-color: #6e2001;
+}
+
+.trilho.light {
+    transition: .7s;
+    background-color: #fa9522;
+}
+
+form.light {
+    box-sizing: border-box;
+    border-radius: 30px;
+    background-color: rgba(141, 68, 1, 0.5);
+    backdrop-filter: blur(8px);
+    width: 370px;
+    height: auto;
+    padding: 40px;
+    text-align: center;
+    font-family: Righteous;
+    overflow: hidden;
+    position: fixed;
+    transition: .7s;
+}
+
+body.light {
+    background-image: url(assets/nebulas.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    transition: .7s;
+}
+
+.login.light,
+.pass.light {
     display: flex;
-    color: aliceblue;
-    background-color: rgba(137, 255, 202, 0.4);
-    margin-top: -43.5%;
-    margin-left: 60%;
-    z-index: 1;
+    margin-bottom: 20px;
+    width: 350px;
+    height: 50px;
+    background-color: #fa9522;
+    border-radius: 25px;
+    border: none;
+    color: #0C1935;
+    padding-left: 40px;
+    transition: 0.2s;
+    outline: none;
 }
 
-@media screen and(min-width: 480px) {
-    div.indicador {
-        display: flex;
-        width: 100px;
-        background-color: #ff0000;
-        color: rgb(255, 255, 255);
-        margin-top: -170%;
-        margin-left: 70%;
-        z-index: 1;
-    }
-
-    .autor {
-        position: fixed;
-        font-family: righteous;
-        margin-top: 84%;
-        font-size: 13px;
-    }
+.login.light:hover,
+.pass.light:hover {
+    background-color: #e79435;
+    border: 1px solid #deea3e;
+    box-shadow: 0 0 10px rgb(252, 249, 99);
 }
 
-@media screen and (max-width: 768px) {
-    div.indicador {
-        display: flex;
-        width: 100px;
-        background-color: #3cff00;
-        color: rgb(255, 255, 255);
-        margin-top: -170%;
-        margin-left: 70%;
-        z-index: 1;
-    }
-
-    .autor {
-        position: fixed;
-        font-family: righteous;
-        margin-top: 100%;
-        font-size: 13px;
-    }
+.login.light::placeholder,
+.pass.light::placeholder {
+    color: #0C1935;
+    opacity: 90%;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-    div.indicador {
-        display: flex;
-        width: 100px;
-        background-color: #00ffbf;
-        color: rgb(255, 255, 255);
-        margin-top: -85%;
-        margin-left: 70%;
-        z-index: 1;
-    }
-
-    .autor {
-        position: fixed;
-        font-family: righteous;
-        margin-top: 60%;
-        font-size: 13px;
-    }
+i.light {
+    color: #0C1935;
+    position: absolute;
+    top: 54.5%;
+    margin-left: -16px;
+    right: 5vh;
+    font-weight: 600px;
 }
+
+h1.light,
+h4.light,
+p.light {
+    font-weight: 100;
+    color: #fa9522;
+}
+
+/*----*/
+button.go.light {
+    color: #0C1935;
+    font-family: Righteous;
+    background-color: #e79435;
+}
+
+button.signup.light {
+    color: #fa9522;
+    font-family: Righteous;
+    background-color: #14213D;
+}
+
+button.signup.light:hover {
+    color: #14213D;
+}
+
+button.go:hover {
+    background-color: #deea3e;
+}
+
+input.login.light:focus,
+input.pass.light:focus {
+    border: 1px solid #deea3e;
+    box-shadow: 0 0 10px rgb(252, 249, 99);
+}
+
+button.go.light:hover,
+button.signup.light:hover {
+    cursor: pointer;
+    background-color: #e79435;
+    border: 1px solid #e79435;
+    box-shadow: 0 0 10px rgb(252, 249, 99);
+    transform: scale(1.06);
+}
+
+.container.light::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+}
+
+h4.light {
+    color: #e79435;
+}
+
+h4.light::after {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    background: #e79435;
+    transition: width .2s;
+}
+
+h4.light:hover:after {
+    width: 100%;
+}
+
+div.signin.light .keyBlue {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+div.signin.light .alienBlue {
+    position: absolute;
+    top: 50.5%;
+    margin-left: -16px;
+    transform: translateY(61.5%);
+    width: 20px;
+}
+
+/*
+.blueAlienjs.light, .blueKeyjs.light {
+    display: none;
+}
+*/

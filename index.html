@@ -12,13 +12,17 @@
 
 <body>
     <div class="container">
-        <div class="indicador">a</div>
-        <form action="" class="form">
+        <div class="trilho" id="trilho">
+            <div class="indicador"></div>
+        </div>
+        <form action="" class="form" id="form">
             <h1>SIGN IN</h1>
             <div class="signin">
                 <img class="alien" src="assets/pixelAlien.png" alt="alien">
-                <input type="email" class="login" placeholder="User">
+                <!--<img class="alien" src="assets/pixelAlienBlue.png" alt="alien" class="blueAlienjs">-->
+                <input type="email" class="login" placeholder="User" id="email">
                 <img class="key" src="assets/pixelKey.png" alt="key">
+                <!--<img class="key" src="assets/pixelKeyBlue.png" alt="key" class="blueKeyjs">-->
                 <input type="password" class="pass" placeholder="Password" id="pass">
                 <i class="bi bi-eye" id="btnPass" onclick="mostrarSenha()"></i>
             </div>
@@ -35,6 +39,7 @@
             <p>Create by @eltonsylviec</p>
         </div>
     </div>
+    <script src="mode.js"></script>
     <script src="view.js"></script>
 </body>
 
