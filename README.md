@@ -7,3 +7,8 @@ Esta página de login foi criada usando HTML, CSS e JavaScript, com foco em um d
 
 <h3>Español</h3>
 Esta página de inicio de sesión está creada utilizando HTML, CSS y JavaScript, con un enfoque en un diseño responsivo y características interactivas. Los elementos cósmicos, como los planetas giratorios y las estrellas titilantes, se logran mediante animaciones avanzadas en CSS y JavaScript, garantizando tanto la funcionalidad como el atractivo estético. El diseño es fácil de usar y se adapta a diferentes dispositivos, brindando una experiencia de inicio de sesión perfecta para diversos usuarios, desde individuos hasta grandes organizaciones.
+
+
+<h2>Login Page - Space Theme Preview</h2>
+
+![login page](https://github.com/user-attachments/assets/cfce2215-6a0b-40de-97ba-c3a55d682f41)
