@@ -118,12 +118,6 @@ div.signin img.alien {
     width: 18px;
 }
 
-/*
-.blueAlienjs, .blueKeyjs {
-    display: none;
-}
-*/
-
 .btn {
     margin: 8px;
     gap: 20px;
@@ -143,12 +137,14 @@ button.go {
     color: #0C1935;
     font-family: Righteous;
     background-color: #70E000;
+    cursor: pointer;
 }
 
 button.signup {
     color: #70E000;
     font-family: Righteous;
     background-color: #14213D;
+    cursor: pointer;
 }
 
 button.go:hover {
